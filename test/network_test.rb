@@ -20,4 +20,7 @@ class NetworkTest < Minitest::Test
     assert_equal "NBC", @network.name
   end
 
+  def test_it_can_have_shows
+    assert_equal [], @network.shows
+  end
 end
