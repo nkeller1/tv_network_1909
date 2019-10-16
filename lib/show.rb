@@ -11,7 +11,6 @@ class Show
   end
 
   def total_salary
-    binding.pry
     characters.collect { |total| "#{total[:salary]}" }
   end
 end
