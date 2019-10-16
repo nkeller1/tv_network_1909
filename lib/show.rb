@@ -2,7 +2,7 @@ require 'pry'
 
 class Show
 
-attr_reader :name, :creator, :characters
+  attr_reader :name, :creator, :characters
 
   def initialize(name, creator, characters)
     @name = name
@@ -12,7 +12,7 @@ attr_reader :name, :creator, :characters
 
   def total_salary
     binding.pry
-    total = characters[:salary]
+    characters.collect { |total| "#{total[:salary]}" }
   end
 end
 
